@@ -88,7 +88,7 @@
 
             // Send a request to the Google Apps Script web app
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "WEB_APP_URL?demoDate=" + encodeURIComponent(demoDate));
+            xhr.open("GET", "https://script.google.com/macros/s/AKfycbxmneXyyHKbh9wdlOuGsGUqpsmP2vNucNxtngD-XCDo0yzZBS_UA9eb5OmLO0X1psEC/exec=" + encodeURIComponent(demoDate));
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     // Do nothing or handle success if required
